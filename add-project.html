@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Project | HackBridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </a>
+        <a class="secondary-btn" href="profile.html">Back to profile</a>
+      </div>
+    </header>
+
+    <main class="container edit-page">
+      <div class="edit-heading">
+        <div>
+          <div class="eyebrow">Project showcase</div>
+          <h1>Add Project</h1>
+          <p class="muted">Share something you built and where you presented it.</p>
+        </div>
+        <a class="ghost-btn" href="profile.html">Cancel</a>
+      </div>
+
+      <div class="edit-layout">
+        <aside class="edit-summary">
+          <div class="summary-mark">+</div>
+          <h2>Show your work</h2>
+          <p>Add projects to make your profile a useful record of your learning and achievements.</p>
+          <div class="summary-rule"></div>
+          <span class="summary-label">Project details</span>
+          <strong>Image and description</strong>
+          <span class="summary-label">Presentation</span>
+          <strong>Event, platform, or place</strong>
+        </aside>
+
+        <section class="edit-form-panel">
+          <div class="panel-heading">
+            <h2>Project details</h2>
+            <p class="muted">Your project will be saved to your student profile.</p>
+          </div>
+
+          <form id="add-project-form" class="edit-form">
+            <div class="field-grid">
+              <div class="field-group field-wide">
+                <label for="project-title">Project title</label>
+                <input id="project-title" name="title" type="text" placeholder="Project title" required />
+              </div>
+
+              <div class="field-group field-wide profile-image-field">
+                <label for="project-image">Project image</label>
+                <div class="profile-image-picker">
+                  <img class="project-image-preview" data-project-image-preview src="HackBridgeLogo.png" alt="Project image preview" />
+                  <div>
+                    <input id="project-image" name="projectImage" type="file" accept="image/png,image/jpeg,image/webp" />
+                    <span class="field-help">PNG, JPG, or WEBP. Image upload is optional.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field-group field-wide">
+                <label for="project-description">Description</label>
+                <textarea id="project-description" name="description" rows="6" placeholder="What did you build? What problem does it solve?" required></textarea>
+              </div>
+
+              <div class="field-group field-wide">
+                <label for="project-presented-at">Where was it presented?</label>
+                <input id="project-presented-at" name="presentedAt" type="text" placeholder="Hackathon, college, conference, or online platform" required />
+              </div>
+            </div>
+
+            <div class="edit-actions">
+              <p class="form-status" data-project-status role="status" aria-live="polite"></p>
+              <button class="primary-btn" type="submit">Save project</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

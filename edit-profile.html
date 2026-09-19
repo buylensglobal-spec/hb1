@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile | HackBridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </a>
+        <a class="secondary-btn" href="profile.html">Back to profile</a>
+      </div>
+    </header>
+
+    <main class="container edit-page">
+      <div class="edit-heading">
+        <div>
+          <div class="eyebrow">Student profile</div>
+          <h1>Edit Profile</h1>
+          <p class="muted">Keep your account and academic details up to date.</p>
+        </div>
+        <a class="ghost-btn" href="profile.html">Cancel</a>
+      </div>
+
+      <div class="edit-layout">
+        <aside class="edit-summary">
+          <div class="summary-mark">HB</div>
+          <h2>Build your profile</h2>
+          <p>Complete details help HackBridge represent your learning journey accurately.</p>
+          <div class="summary-rule"></div>
+          <span class="summary-label">Required account details</span>
+          <strong>Name and email</strong>
+          <span class="summary-label">Optional academic details</span>
+          <strong>Languages, college, and branch</strong>
+        </aside>
+
+        <section class="edit-form-panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Your details</h2>
+              <p class="muted">Changes are saved to your student profile.</p>
+            </div>
+          </div>
+
+          <form id="edit-profile-form" class="edit-form">
+            <div class="field-grid">
+              <div class="field-group field-wide profile-image-field">
+                <label for="profile-image">Profile picture</label>
+                <div class="profile-image-picker">
+                  <img class="profile-image-preview" data-profile-image-preview src="HackBridgeLogo.png" alt="Profile picture preview" />
+                  <div>
+                    <input id="profile-image" name="profileImage" type="file" accept="image/png,image/jpeg,image/webp" />
+                    <span class="field-help">PNG, JPG, or WEBP. Choose a clear square image.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="profile-name">Name</label>
+                <input id="profile-name" name="name" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="field-group">
+                <label for="profile-email">Email</label>
+                <input id="profile-email" name="email" type="email" autocomplete="email" required />
+              </div>
+
+              <div class="field-group">
+                <label for="profile-college">College name</label>
+                <input id="profile-college" name="collegeName" type="text" />
+              </div>
+
+              <div class="field-group">
+                <label for="profile-branch">Branch</label>
+                <input id="profile-branch" name="branch" type="text" placeholder="Computer Science and Engineering" />
+              </div>
+
+              <fieldset class="field-group field-wide language-field">
+                <legend>Known programming languages <span>(optional)</span></legend>
+                <input id="profile-programming-languages" name="programmingLanguages" type="hidden" />
+                <div class="language-options" aria-label="Select known programming languages">
+                  <button type="button" class="language-option" data-language="Java">Java</button>
+                  <button type="button" class="language-option" data-language="JavaScript">JS</button>
+                  <button type="button" class="language-option" data-language="Node.js">Node.js</button>
+                  <button type="button" class="language-option" data-language="Python">Python</button>
+                  <button type="button" class="language-option" data-language="Express.js">Express.js</button>
+                  <button type="button" class="language-option" data-language="Flutter">Flutter</button>
+                  <button type="button" class="language-option" data-language="React Native">React Native</button>
+                  <button type="button" class="language-option" data-language="C">C</button>
+                  <button type="button" class="language-option" data-language="C+">C+</button>
+                  <button type="button" class="language-option" data-language="C++">C++</button>
+                  <button type="button" class="language-option" data-language="C#">C#</button>
+                  <button type="button" class="language-option" data-language="TypeScript">TypeScript</button>
+                  <button type="button" class="language-option" data-language="HTML">HTML</button>
+                  <button type="button" class="language-option" data-language="CSS">CSS</button>
+                  <button type="button" class="language-option" data-language="SQL">SQL</button>
+                  <button type="button" class="language-option" data-language="Go">Go</button>
+                  <button type="button" class="language-option" data-language="Rust">Rust</button>
+                  <button type="button" class="language-option" data-language="Kotlin">Kotlin</button>
+                  <button type="button" class="language-option" data-language="Swift">Swift</button>
+                  <button type="button" class="language-option" data-language="PHP">PHP</button>
+                  <button type="button" class="language-option" data-language="Ruby">Ruby</button>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="edit-actions">
+              <p class="form-status" data-profile-status role="status" aria-live="polite"></p>
+              <button class="primary-btn" type="submit">Save details</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

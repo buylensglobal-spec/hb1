@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube | HackBridge</title>
+    <link rel="stylesheet" href="styles.css?v=youtube-channels-2" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <div class="brand">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </div>
+
+        <div class="header-actions">
+          <a class="secondary-btn" href="signin.html">Sign in</a>
+          <a class="primary-btn" href="login.html">Login</a>
+          <a class="profile-chip" href="profile.html" aria-label="Open student profile" data-profile-chip hidden>
+            <img src="HackBridgeLogo.png" data-profile-image alt="Student profile" />
+            <div>
+              <strong data-profile-name></strong>
+              <span data-profile-email></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <nav class="container navbar" aria-label="Main navigation">
+        <a class="nav-link" href="index.html" data-page="index.html">Home</a>
+        <a class="nav-link" href="hackathons.html" data-page="hackathons.html">Hackathons</a>
+        <a class="nav-link" href="internships.html" data-page="internships.html">Internships</a>
+        <a class="nav-link" href="language-club.html" data-page="language-club.html">Language Club</a>
+        <a class="nav-link active" href="youtube.html" data-page="youtube.html">YouTube</a>
+      </nav>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-heading">
+        <h2>Learning Channels</h2>
+        <div class="section-heading-actions">
+          <span class="muted">Programming videos selected for students</span>
+          <a class="ghost-btn" href="index.html">Back to home</a>
+        </div>
+      </div>
+
+      <section class="youtube-channel-library" data-youtube-channel-library>
+        <div class="section-heading">
+          <h2>YouTube Channels</h2>
+          <span class="muted">Channels added by HackBridge</span>
+        </div>
+        <div class="youtube-channel-grid" data-youtube-channel-grid></div>
+      </section>
+
+      <div class="youtube-controls" aria-label="Programming video filters">
+        <label class="youtube-language-filter">
+          <span>Programming language</span>
+          <select data-language-filter>
+            <option value="all">All programming languages</option>
+          </select>
+        </label>
+      </div>
+
+      <section class="video-library" data-video-library>
+        <div class="section-heading">
+          <h2>Videos by programming language</h2>
+          <span class="muted">Choose a language to find learning resources</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© 2026 HackBridge</div>
+        <div>Future-focused education for learners & builders</div>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js?v=channel-logos-1"></script>
+  </body>
+</html>

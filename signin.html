@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | HackBridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </a>
+        <a class="secondary-btn" href="login.html">Login</a>
+      </div>
+    </header>
+
+    <main class="container page-shell auth-shell">
+      <section class="card auth-card">
+        <div class="eyebrow">Join HackBridge</div>
+        <h1>Create your account</h1>
+        <p class="muted">Build your learner profile and keep your opportunities in one place.</p>
+
+        <form id="sign-in-form" class="form-stack">
+          <label for="sign-in-name">Name</label>
+          <input id="sign-in-name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+
+          <label for="sign-in-email">Email</label>
+          <input id="sign-in-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+          <label for="sign-in-password">Password</label>
+          <div class="password-field">
+            <input id="sign-in-password" name="password" type="password" autocomplete="new-password" placeholder="At least 6 characters" minlength="6" required />
+            <button class="password-toggle" type="button" data-password-toggle="sign-in-password" aria-label="Show password" aria-pressed="false">&#128065;</button>
+          </div>
+
+          <button class="primary-btn" type="submit">Create account</button>
+          <p class="form-status" data-auth-status role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+      </section>
+    </main>
+
+    <script type="module" src="script.js?v=password-toggle-1"></script>
+  </body>
+</html>

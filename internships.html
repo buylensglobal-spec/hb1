@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internships | HackBridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <div class="brand">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </div>
+
+        <div class="header-actions">
+          <a class="secondary-btn" href="signin.html">Sign in</a>
+          <a class="primary-btn" href="login.html">Login</a>
+          <a class="profile-chip" href="profile.html" aria-label="Open student profile" data-profile-chip hidden>
+            <img src="HackBridgeLogo.png" data-profile-image alt="Student profile" />
+            <div>
+              <strong data-profile-name></strong>
+              <span data-profile-email></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <nav class="container navbar" aria-label="Main navigation">
+        <a class="nav-link" href="index.html" data-page="index.html">Home</a>
+        <a class="nav-link" href="hackathons.html" data-page="hackathons.html">Hackathons</a>
+        <a class="nav-link active" href="internships.html" data-page="internships.html">Internships</a>
+        <a class="nav-link" href="language-club.html" data-page="language-club.html">Language Club</a>
+        <a class="nav-link" href="youtube.html" data-page="youtube.html">YouTube</a>
+      </nav>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-heading">
+        <h2>Internship Opportunities</h2>
+        <span class="muted">Requirements, roles, and growth paths</span>
+      </div>
+
+      <div class="intern-grid">
+        <article class="intern-card" data-card-name="Product Intern at NorthStar Labs">
+          <h3>Product Intern</h3>
+          <div class="badge-row">
+            <span class="badge">Remote</span>
+            <span class="badge">3 months</span>
+          </div>
+          <p>Help define user flows, run product experiments, and support research for B2B education tools.</p>
+          <ul class="list-check">
+            <li>Familiarity with product thinking</li>
+            <li>Strong communication</li>
+            <li>Research and presentation skills</li>
+          </ul>
+          <div class="meta-row">
+            <span>NorthStar Labs</span>
+            <button class="action-btn primary-btn" data-join>Join</button>
+          </div>
+        </article>
+
+        <article class="intern-card" data-card-name="Frontend Engineer Intern at PixelForge">
+          <h3>Frontend Engineer Intern</h3>
+          <div class="badge-row">
+            <span class="badge">React</span>
+            <span class="badge">Hybrid</span>
+          </div>
+          <p>Build responsive product interfaces and collaborate with designers to ship accessible experiences.</p>
+          <ul class="list-check">
+            <li>HTML/CSS/JavaScript experience</li>
+            <li>UI implementation focus</li>
+            <li>Design system awareness</li>
+          </ul>
+          <div class="meta-row">
+            <span>PixelForge</span>
+            <button class="action-btn primary-btn" data-join>Join</button>
+          </div>
+        </article>
+
+        <article class="intern-card" data-card-name="Data & Insights Intern at InsightLoop">
+          <h3>Data & Insights Intern</h3>
+          <div class="badge-row">
+            <span class="badge">Python</span>
+            <span class="badge">Data</span>
+          </div>
+          <p>Analyze user engagement and create visual reports that inform product and retention decisions.</p>
+          <ul class="list-check">
+            <li>Python and dashboarding skills</li>
+            <li>Analytical reporting</li>
+            <li>Strong attention to detail</li>
+          </ul>
+          <div class="meta-row">
+            <span>InsightLoop</span>
+            <button class="action-btn primary-btn" data-join>Join</button>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© 2026 HackBridge</div>
+        <div>Future-focused education for learners & builders</div>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

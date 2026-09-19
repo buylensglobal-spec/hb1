@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add YouTube | HackBridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="owner-dashboard.html">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </a>
+        <button class="secondary-btn" id="owner-logout" type="button">Log out</button>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Owner Dashboard</div>
+          <h1>Add YouTube</h1>
+        </div>
+        <a class="ghost-btn" href="owner-dashboard.html">Back to Owner Dashboard</a>
+      </div>
+
+      <div class="edit-layout youtube-edit-layout">
+        <aside class="edit-summary">
+          <div class="summary-mark">YT</div>
+          <h2>Build the video library</h2>
+          <p>Add focused programming videos so students can discover useful learning resources by language.</p>
+          <div class="summary-rule"></div>
+          <span class="summary-label">Required details</span>
+          <strong>Language, video link, and channel</strong>
+          <span class="summary-label">Student context</span>
+          <strong>A short, useful description</strong>
+        </aside>
+
+        <section class="edit-form-panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Video details</h2>
+              <p class="muted">Add one YouTube video to the student resource library.</p>
+            </div>
+          </div>
+
+          <form id="add-youtube-form" class="edit-form">
+            <div class="field-grid">
+              <fieldset class="field-group field-wide language-field">
+                <legend>Computer language</legend>
+                <input id="youtube-language" name="language" type="hidden" required />
+                <div class="language-options" aria-label="Select a computer language">
+                  <button type="button" class="language-option" data-youtube-language="Java">Java</button>
+                  <button type="button" class="language-option" data-youtube-language="JavaScript">JS</button>
+                  <button type="button" class="language-option" data-youtube-language="Node.js">Node.js</button>
+                  <button type="button" class="language-option" data-youtube-language="Python">Python</button>
+                  <button type="button" class="language-option" data-youtube-language="Express.js">Express.js</button>
+                  <button type="button" class="language-option" data-youtube-language="Flutter">Flutter</button>
+                  <button type="button" class="language-option" data-youtube-language="React Native">React Native</button>
+                  <button type="button" class="language-option" data-youtube-language="C">C</button>
+                  <button type="button" class="language-option" data-youtube-language="C+">C+</button>
+                  <button type="button" class="language-option" data-youtube-language="C++">C++</button>
+                  <button type="button" class="language-option" data-youtube-language="C#">C#</button>
+                  <button type="button" class="language-option" data-youtube-language="TypeScript">TypeScript</button>
+                  <button type="button" class="language-option" data-youtube-language="HTML">HTML</button>
+                  <button type="button" class="language-option" data-youtube-language="CSS">CSS</button>
+                  <button type="button" class="language-option" data-youtube-language="SQL">SQL</button>
+                  <button type="button" class="language-option" data-youtube-language="Go">Go</button>
+                  <button type="button" class="language-option" data-youtube-language="Rust">Rust</button>
+                  <button type="button" class="language-option" data-youtube-language="Kotlin">Kotlin</button>
+                  <button type="button" class="language-option" data-youtube-language="Swift">Swift</button>
+                  <button type="button" class="language-option" data-youtube-language="PHP">PHP</button>
+                  <button type="button" class="language-option" data-youtube-language="Ruby">Ruby</button>
+                </div>
+              </fieldset>
+
+              <div class="field-group field-wide">
+                <label for="youtube-video-url">YouTube video link</label>
+                <input id="youtube-video-url" name="videoUrl" type="url" placeholder="https://www.youtube.com/watch?v=..." required />
+              </div>
+
+              <div class="field-group">
+                <label for="youtube-channel-name">YouTube channel name</label>
+                <input id="youtube-channel-name" name="channelName" type="text" placeholder="Channel name" required />
+              </div>
+
+              <div class="field-group">
+                <label for="youtube-description">Description</label>
+                <textarea id="youtube-description" name="description" rows="4" placeholder="What will students learn?" required></textarea>
+              </div>
+            </div>
+
+            <div class="edit-actions">
+              <p class="form-status" data-youtube-status role="status" aria-live="polite"></p>
+              <button class="primary-btn" type="submit">Save YouTube</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="owner-youtube.js?v=language-key-2"></script>
+  </body>
+</html>

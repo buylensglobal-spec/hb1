@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add YT Channel | HackBridge</title>
+    <link rel="stylesheet" href="styles.css?v=owner-channel-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="owner-dashboard.html">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </a>
+        <button class="secondary-btn" id="owner-logout" type="button">Log out</button>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Owner Dashboard</div>
+          <h1>Add YT Channel</h1>
+        </div>
+        <a class="ghost-btn" href="owner-dashboard.html">Back to Owner Dashboard</a>
+      </div>
+
+      <div class="edit-layout youtube-edit-layout">
+        <aside class="edit-summary">
+          <div class="summary-mark">CH</div>
+          <h2>Grow the channel directory</h2>
+          <p>Add a trusted YouTube channel so students can discover useful creators.</p>
+          <div class="summary-rule"></div>
+          <span class="summary-label">Channel details</span>
+          <strong>Name and channel link</strong>
+          <span class="summary-label">Channel link</span>
+          <strong>Use the official YouTube URL</strong>
+        </aside>
+
+        <section class="edit-form-panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Channel details</h2>
+              <p class="muted">This is separate from adding an individual YouTube video.</p>
+            </div>
+          </div>
+
+          <form id="add-youtube-channel-form" class="edit-form">
+            <div class="field-grid">
+              <div class="field-group field-wide">
+                <label for="youtube-channel-name">YouTube channel name</label>
+                <input id="youtube-channel-name" name="channelName" type="text" placeholder="Channel name" required />
+              </div>
+
+              <div class="field-group field-wide">
+                <label for="youtube-channel-url">YouTube channel link</label>
+                <input id="youtube-channel-url" name="channelUrl" type="url" placeholder="https://www.youtube.com/@channel" required />
+              </div>
+            </div>
+
+            <div class="edit-actions">
+              <p class="form-status" data-channel-status role="status" aria-live="polite"></p>
+              <button class="primary-btn" type="submit">Save Channel</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="owner-youtube-channel.js?v=owner-channel-1"></script>
+  </body>
+</html>

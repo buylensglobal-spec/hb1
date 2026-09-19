@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackBridge | Future-Focused Education</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <div class="brand">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </div>
+
+        <div class="header-actions">
+          <a class="secondary-btn" href="signin.html">Sign in</a>
+          <a class="primary-btn" href="login.html">Login</a>
+          <a class="profile-chip" href="profile.html" aria-label="Open student profile" data-profile-chip hidden>
+            <img src="HackBridgeLogo.png" data-profile-image alt="Student profile" />
+            <div>
+              <strong data-profile-name></strong>
+              <span data-profile-email></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <nav class="container navbar" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html" data-page="index.html">Home</a>
+        <a class="nav-link" href="hackathons.html" data-page="hackathons.html">Hackathons</a>
+        <a class="nav-link" href="internships.html" data-page="internships.html">Internships</a>
+        <a class="nav-link" href="language-club.html" data-page="language-club.html">Language Club</a>
+        <a class="nav-link" href="youtube.html" data-page="youtube.html">YouTube</a>
+      </nav>
+    </header>
+
+    <main class="container page-shell">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Future-focused education</div>
+          <h1>
+            Build <span class="highlight">skills for tomorrow</span>
+          </h1>
+          <p>
+            HackBridge connects students, mentors, and creators through collaborative programs,
+            internship opportunities, language support, and hands-on innovation experiences.
+          </p>
+          <div class="section-actions">
+            <button class="primary-btn">Explore Programs</button>
+            <button class="ghost-btn">View My Projects</button>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="HackBridge brand illustration">
+          <div class="logo-badge">
+            <img src="HackBridgeLogo.png" alt="HackBridge logo" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>My Projects</h2>
+          <a class="ghost-btn" href="add-project.html">Add Project</a>
+        </div>
+
+        <div class="projects-grid" data-home-projects></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© 2026 HackBridge</div>
+        <div>Future-focused education for learners & builders</div>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

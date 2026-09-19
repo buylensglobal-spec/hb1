@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | HackBridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </a>
+        <a class="secondary-btn" href="signin.html">Sign in</a>
+      </div>
+    </header>
+
+    <main class="container page-shell auth-shell">
+      <section class="card auth-card">
+        <div class="eyebrow">Welcome back</div>
+        <h1>Login to HackBridge</h1>
+        <p class="muted">Continue learning, joining opportunities, and sharing with your community.</p>
+
+        <form id="login-form" class="form-stack">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+          <label for="login-password">Password</label>
+          <div class="password-field">
+            <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required />
+            <button class="password-toggle" type="button" data-password-toggle="login-password" aria-label="Show password" aria-pressed="false">&#128065;</button>
+          </div>
+
+          <button class="primary-btn" type="submit">Login</button>
+          <p class="form-status" data-auth-status role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="auth-switch">New to HackBridge? <a href="signin.html">Create an account</a></p>
+      </section>
+    </main>
+
+    <script type="module" src="script.js?v=password-toggle-1"></script>
+  </body>
+</html>

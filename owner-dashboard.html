@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owner Dashboard | HackBridge</title>
+    <link rel="stylesheet" href="styles.css?v=owner-dashboard-2" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="owner-dashboard.html">
+          <img class="brand-mark" src="HackBridgeLogo.png" alt="HackBridge logo" />
+          <div class="brand-name">HackBridge</div>
+        </a>
+        <button class="secondary-btn" id="owner-logout" type="button">Log out</button>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="owner-dashboard-heading">
+        <div class="owner-dashboard-copy">
+          <div class="eyebrow">Restricted access</div>
+          <h1>Owner Dashboard</h1>
+          <p>Manage HackBridge resources and keep track of the learner community.</p>
+        </div>
+        <div class="owner-actions">
+          <a class="secondary-btn owner-channel-btn" href="owner-youtube-channel.html">Add YT Channel</a>
+          <a class="primary-btn owner-youtube-btn" href="owner-youtube.html">Add YouTube</a>
+        </div>
+      </div>
+
+      <section class="owner-overview" aria-label="Student overview">
+        <div class="owner-section-heading">
+          <div>
+            <div class="eyebrow">Community</div>
+            <h2>Registered students</h2>
+          </div>
+          <div class="owner-count" aria-label="Registered student count">
+            <strong data-student-count>0</strong>
+            <span data-student-label>students</span>
+          </div>
+        </div>
+        <div class="info-card owner-student-card">
+          <div class="owner-list-heading" aria-hidden="true">
+            <span>Student</span>
+            <span>Contact</span>
+          </div>
+          <ul class="info-list" data-owner-students>
+            <li>Loading...</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="owner-dashboard.js"></script>
+  </body>
+</html>
